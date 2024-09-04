@@ -2,7 +2,8 @@ package javaapplication101;
 import java.text.DecimalFormat;
 import java.util.Scanner;
 
-public class netpayv2 {
+public class Salaries {
+     
     
     int id;
     String name;
@@ -27,5 +28,6 @@ public void addDetails(int did, String dname, double drate, double dhours, doubl
                 this.id, this.name, rate, hours, totalGross, this.deduction, netPay);
     }
 }
+
 
 
