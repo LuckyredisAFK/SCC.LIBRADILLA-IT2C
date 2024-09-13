@@ -3,14 +3,40 @@ import java.util.Scanner;
 import java.text.DecimalFormat;
 
 
-public class JavaApplication101 {
+public class Main {
 
     public static void main(String[] args) {
         
-        
+//-------------------------------------------------        
+
+
+
 //        For Products
-        Product prd = new Product();
-        prd.Produc();
+//        Product prd = new Product();
+//        prd.Produc();
+
+
+//        For Grades 
+//        Grade gd = new Grade();
+//        gd.Graden();
+
+//        For Salary 
+//        Salary slr = new Salary();
+//        slr.SalaryGen();
+
+//        For Accounts
+        Account accs = new Account();
+        accs.Acc();
+        
+//        For Net Gen Pay
+//        netgenpay gnp = new netgenpay();
+//        gnp.netGen();
+        
+
+
+//-------------------------------------------------   
+
+
 
 
 
@@ -36,10 +62,7 @@ public class JavaApplication101 {
 
 
 
-//        For Grades 
-//        Grade gd = new Grade();
-//        gd.Graden();
-        
+
         
         
         
@@ -90,9 +113,7 @@ public class JavaApplication101 {
         
         
         
-//        For Salary 
-//        Salary slr = new Salary();
-//        slr.SalaryGen();
+
         
         
         
@@ -186,8 +207,8 @@ public class JavaApplication101 {
 
 
 //        For Accounts
-        Account accs = new Account();
-        accs.Acc();
+//        Account accs = new Account();
+//        accs.Acc();
   
         
     }

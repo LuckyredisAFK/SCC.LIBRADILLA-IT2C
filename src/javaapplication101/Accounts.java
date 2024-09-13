@@ -1,49 +1,37 @@
 package javaapplication101;
+import java.util.Scanner;
 
 
 public class Accounts {
     
     int id;
-    String fname, lname, email, uname;
+    String fname, lname, email, uname, password;
 
     
-public void addAccount(int aid, String afname, String alname, String aemail, String auname){
+public void addAccount(int aid, String afname, String alname, String aemail, String auname, String upassword){
     
     this.id = aid;
     this.fname = afname;
+    this.lname = alname;
     this.email = aemail;
     this.uname = auname;
+    this.password = upassword;
 }
 
 public void viewAccount(){
     
-    System.out.printf("%-10d %-10s %-10s %-10s%n",
-                this.id, this.fname, email, uname);
+    System.out.printf("%-15d %-15s %-15s %-20s %-20s %-20s%n",
+                this.id, this.fname, this.lname, this.email, this.uname, this.password);
     
+
 }
 
-public void passwordVer(String passWord){
-    
-    String specialCharacters = "!@#$%^&*()_+-=[]{}\\|;:'\",./?";
-    
-    if (passWord.length() < 8) {
-    System.out.println("Password must contain 8 characters or more.");
-    }
-    else if (!passWord.matches(".*[A-Z]*.")){
-        
-        System.out.println("Password must contain atleast one capitalized letter.");
-        
-    }
-    else if (!passWord.matches(specialCharacters)){
-        
-        System.out.println("Password must contain atleast one special character.");
-    
-    }
-    else if (! passWord.matches(".*\\d*.")){
-        
-        System.out.println("Password must contain atleast one number.");
-    }
-}
+public boolean passwordVerifier(String password) {
 
-    
+        String regex = "^(?=.*[0-9])(?=.*[A-Z])(?=.*[!?@#$%^&-+=()])(?=\\S+$).{8,}$";
+
+        return password.matches(regex);
 }
+}
+    
+
