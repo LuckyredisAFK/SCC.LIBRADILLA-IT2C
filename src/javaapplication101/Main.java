@@ -17,16 +17,16 @@ public class Main {
 
 
 //        For Grades 
-//        Grade gd = new Grade();
-//        gd.Graden();
+        Grade gd = new Grade();
+        gd.Graden();
 
 //        For Salary 
 //        Salary slr = new Salary();
 //        slr.SalaryGen();
 
 //        For Accounts
-        Account accs = new Account();
-        accs.Acc();
+//        Account accs = new Account();
+//        accs.Acc();
         
 //        For Net Gen Pay
 //        netgenpay gnp = new netgenpay();
